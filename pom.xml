@@ -36,8 +36,6 @@
 		</license>
 	</licenses>
 
-
-
 	<dependencies>
 		<dependency>
 			<groupId>com.drewnoakes</groupId>
@@ -45,6 +43,5 @@
 			<version>2.10.1</version>
 		</dependency>
 	</dependencies>
-
 
 </project>
