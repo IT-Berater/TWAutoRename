@@ -1,1 +1,1 @@
-# TWAutoRename
+# de.wenzlaff.twautorename
