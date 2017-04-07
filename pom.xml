@@ -4,6 +4,7 @@
 	<groupId>de.wenzlaff.twautorename</groupId>
 	<artifactId>de.wenzlaff.twautorename</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
 	<name>Thomas Wenzlaff</name>
 	<description>TWAutoRename</description>
@@ -71,7 +72,8 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>de.wenzlaff.twautorename.TWAutoRename</mainClass>							
+							<mainClass>de.wenzlaff.twautorename.TWAutoRename</mainClass>
+							<classpathPrefix>lib/</classpathPrefix>							
 						</manifest>
 					</archive>
 					<exclusions>
@@ -90,7 +92,8 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<includeScope>runtime</includeScope>							
+							<includeScope>runtime</includeScope>
+							<outputDirectory>${project.build.directory}/lib/</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
