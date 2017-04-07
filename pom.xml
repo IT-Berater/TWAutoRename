@@ -22,7 +22,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
+		<java.version>1.7</java.version>
 		<junit.jupiter.version>5.0.0-M2</junit.jupiter.version>
 		<junit.vintage.version>4.12.0-M2</junit.vintage.version>
 		<junit.platform.version>1.0.0-M2</junit.platform.version>
@@ -37,9 +37,9 @@
 	</licenses>
 	
 	<scm>
-		<connection>scm:git:git@github.com:IT-Berater/de.wenzlaff.lebenskalender.git</connection>
-		<developerConnection>scm:git:git@github.com:IT-Berater/de.wenzlaff.lebenskalender.git</developerConnection>
-		<url>https://github.com/IT-Berater/de.wenzlaff.lebenskalender</url>
+		<connection>scm:git:git@github.com:IT-Berater/TWAutoRename.git</connection>
+		<developerConnection>scm:git:git@github.com:IT-Berater/TWAutoRename.git</developerConnection>
+		<url>https://github.com/IT-Berater/TWAutoRename</url>
 	</scm>
 
 	<build>
@@ -71,8 +71,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>de.wenzlaff.lebenskalender.Lebenskalender</mainClass>
-							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>de.wenzlaff.twautorename.TWAutoRename</mainClass>							
 						</manifest>
 					</archive>
 					<exclusions>
@@ -91,8 +90,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<includeScope>runtime</includeScope>
-							<outputDirectory>${project.build.directory}/lib/</outputDirectory>
+							<includeScope>runtime</includeScope>							
 						</configuration>
 					</execution>
 				</executions>
@@ -122,10 +120,7 @@
 							<goal>jar</goal>
 						</goals>
 					</execution>
-				</executions>
-				<configuration>
-					<additionalparam>-Xdoclint:none</additionalparam>
-				</configuration>
+				</executions>		
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
